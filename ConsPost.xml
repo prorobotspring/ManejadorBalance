@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>String</Login>
+	<Channel></Channel>
+	<System></System>
+	<MSISDN>
+		<Number>${Number}</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>

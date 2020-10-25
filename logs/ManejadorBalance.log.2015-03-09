@@ -1,0 +1,119 @@
+[2015Mar09 10:20:17,351][INFO ][1425912617351][doPost SolicitudServlet.java:64][XML Recibido: null]
+[2015Mar09 10:20:17,355][DEBUG][1425912617351][processRequest FCController.java:80][]
+[2015Mar09 10:20:17,356][DEBUG][1425912617351][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2015Mar09 10:20:17,420][ERROR][1425912617351][processRequest FCController.java:107][Codigo de Error: 2999 Mensaje de Error: Ha ocurrido un error de tipo Exception]
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:33)
+	at ve.com.digitel.manejador.fc.XmlToRequestIVR.run(XmlToRequestIVR.java:59)
+	at ve.com.digitel.manejador.fc.FCHelper.buildRequest(FCHelper.java:56)
+	at ve.com.digitel.manejador.fc.FCController.processRequest(FCController.java:87)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doPost(SolicitudServlet.java:68)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doGet(SolicitudServlet.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2015Mar09 10:20:17,425][DEBUG][1425912617351][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Mar09 10:20:17,427][INFO ][1425912617351][doPost SolicitudServlet.java:70][Response Recibido: var code='2998';
+var message='';]
+[2015Mar09 14:46:32,584][INFO ][1425928592584][doPost SolicitudServlet.java:64][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>saldo1</Login>
+	<Channel>IVR-VAL</Channel>
+	<System>IVR</System>
+	<MSISDN>
+		<Number>584126056321@172.16.98.166</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2015Mar09 14:46:32,594][DEBUG][1425928592584][processRequest FCController.java:80][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>saldo1</Login>
+	<Channel>IVR-VAL</Channel>
+	<System>IVR</System>
+	<MSISDN>
+		<Number>584126056321@172.16.98.166</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2015Mar09 14:46:32,595][DEBUG][1425928592584][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2015Mar09 14:46:32,629][DEBUG][1425928592584][execute SolicitudQueueSubmiter.java:136][Nuevo request: ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1425928592584_584126056321@172.16.98.166} | context: {MSISDN={Number=584126056321@172.16.98.166}, Channel=IVR-VAL, System=IVR, Login=saldo1}}]
+[2015Mar09 14:46:32,633][INFO ][1425928592584_584126056321@172.16.98.166][onMessage ManejadorBalanceMDBean.java:128][Mensaje recibido con exito en la cola de SOLICITUD ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1425928592584_584126056321@172.16.98.166} | context: {MSISDN={Number=584126056321@172.16.98.166}, Channel=IVR-VAL, System=IVR, Login=saldo1}}]
+[2015Mar09 14:46:32,635][DEBUG][1425928592584_584126056321@172.16.98.166][processRequest RC.java:198][Inicio de consulta a RTBS ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1425928592584_584126056321@172.16.98.166} | context: {MSISDN={Number=584126056321@172.16.98.166}, Channel=IVR-VAL, System=IVR, Login=saldo1}}]
+[2015Mar09 14:46:32,636][DEBUG][1425928592584_584126056321@172.16.98.166][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Mar09 14:46:32,638][DEBUG][1425928592584_584126056321@172.16.98.166][buildSOAPBody RTBSPLBLSDelegator.java:184][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-03-09T14:46:32.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584126056321@172.16.98.166</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>17</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Mar09 14:46:32,640][DEBUG][1425928592584_584126056321@172.16.98.166][execute RTBSPLBLSDelegator.java:136][str: org.apache.commons.httpclient.methods.StringRequestEntity@1d56430]
+[2015Mar09 14:46:32,648][DEBUG][1425928592584][execute SolicitudQueueSubmiter.java:142][Request enviado a la cola de solicitudes]
+[2015Mar09 14:46:32,651][DEBUG][1425928592584][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Mar09 14:46:32,653][DEBUG][1425928592584][processRequest FCController.java:141][Response: var code='0';
+var message='Proceso completado con exito';]
+[2015Mar09 14:46:32,654][INFO ][1425928592584][doPost SolicitudServlet.java:70][Response Recibido: var code='0';
+var message='Proceso completado con exito';]
+[2015Mar09 14:46:32,794][DEBUG][1425928592584_584126056321@172.16.98.166][execute RTBSPLBLSDelegator.java:152][Contents <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><wsa:Action>http://schemas.xmlsoap.org/ws/2004/08/addressing/fault</wsa:Action><wsa:MessageID>urn:uuid:9b17ca79-ccbb-4085-9a47-a08908a2a8c8</wsa:MessageID><wsa:RelatesTo>urn:uuid:fa02bbb3-f4f9-4849-958d-fcb49f41f1ff</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-bec362df-4b27-4beb-a8ee-3a25e579cd55"><wsu:Created>2015-03-09T19:18:51Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><soap:Fault><faultcode>soap:Client</faultcode><faultstring>&lt;ErrorCode&gt;4004&lt;/ErrorCode&gt;&lt;ErrorDescription&gt;Invalid subscriber id&lt;/ErrorDescription&gt;</faultstring><detail><ErrorCode>4004</ErrorCode><ErrorDescription>Invalid subscriber id</ErrorDescription></detail></soap:Fault></soap:Body></soap:Envelope>
+]
+[2015Mar09 14:46:32,796][DEBUG][1425928592584_584126056321@172.16.98.166][processRTBSQuery RC.java:138][XML= null]
+[2015Mar09 14:46:32,797][DEBUG][1425928592584_584126056321@172.16.98.166][processRequest RC.java:204][xmlRTBS: null]
+[2015Mar09 14:46:32,799][INFO ][1425928592584_584126056321@172.16.98.166][processRequest RC.java:223][Postpaaaaaaagoooooooooooo]
+[2015Mar09 14:46:32,800][DEBUG][1425928592584_584126056321@172.16.98.166][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Mar09 14:46:32,801][DEBUG][1425928592584_584126056321@172.16.98.166][execute ConsultaPostpagoDelegator.java:97][endPointURL: http://CFGLOBD05:9101/ColaConsPostpago/SolicitudConsPostServlet?]
+[2015Mar09 14:46:32,803][DEBUG][1425928592584_584126056321@172.16.98.166][execute ConsultaPostpagoDelegator.java:98][soapBody: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>String</Login>
+	<Channel></Channel>
+	<System></System>
+	<MSISDN>
+		<Number>584126056321@172.16.98.166</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2015Mar09 14:46:32,923][DEBUG][1425928592584_584126056321@172.16.98.166][execute ConsultaPostpagoDelegator.java:119][Respuesta obtenida de la consulta de linea postpago: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado con exito"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>
+]
+[2015Mar09 14:46:32,925][DEBUG][1425928592584_584126056321@172.16.98.166][processRequest RC.java:235][Payload obtenido de la transformacion <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado con exito"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>
+]
+[2015Mar09 14:46:32,926][DEBUG][1425928592584_584126056321@172.16.98.166][processRequest RC.java:247][Respuesta obtenida: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: El GSM es postpago. Se incorporo la solicitud a la cola postpago | info:  | vto: {}}]
+[2015Mar09 14:46:32,927][DEBUG][1425928592584_584126056321@172.16.98.166][processRequest RC.java:251][Respuesta obtenida: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: El GSM es postpago. Se incorporo la solicitud a la cola postpago | info:  | vto: {}}]
+[2015Mar09 14:46:32,929][INFO ][1425928592584_584126056321@172.16.98.166][onMessage ManejadorBalanceMDBean.java:132][Solicitud procesada ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: El GSM es postpago. Se incorporo la solicitud a la cola postpago | info:  | vto: {}}]

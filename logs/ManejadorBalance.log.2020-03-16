@@ -1,0 +1,136 @@
+[2020Mar16 19:15:23,720][INFO ][1584397485454][configurarLogger BSSIntLogger.java:67][APLICACION: ManejadorBalance - VERSION: 1.4]
+[2020Mar16 19:15:23,724][INFO ][1584397485454][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Consulta Saldo - Cambio en el mensaje de clientes Prepago]
+[2020Mar16 19:15:23,728][INFO ][1584402323727][doPost SolicitudServlet.java:64][XML Recibido: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>saldo1</Login>
+	<Channel>IVR-VAL</Channel>
+	<System>IVR</System>
+	<MSISDN>
+		<Number>584125230166</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2020Mar16 19:15:23,759][DEBUG][1584402323727][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: var code='${code}';
+var message='${message}';]
+[2020Mar16 19:15:23,760][DEBUG][1584402323727][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: var code=']
+[2020Mar16 19:15:23,770][DEBUG][1584402323727][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: code]
+[2020Mar16 19:15:23,775][DEBUG][1584402323727][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: ';
+var message=']
+[2020Mar16 19:15:23,776][DEBUG][1584402323727][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: message]
+[2020Mar16 19:15:23,778][DEBUG][1584402323727][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: ';]
+[2020Mar16 19:15:23,783][DEBUG][1584402323727][processRequest FCController.java:80][<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>saldo1</Login>
+	<Channel>IVR-VAL</Channel>
+	<System>IVR</System>
+	<MSISDN>
+		<Number>584125230166</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2020Mar16 19:15:23,789][DEBUG][1584402323727][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2020Mar16 19:15:24,323][DEBUG][1584402323727][execute SolicitudQueueSubmiter.java:136][Nuevo request: ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1584402323727_584125230166} | context: {MSISDN={Number=584125230166}, Channel=IVR-VAL, System=IVR, Login=saldo1}}]
+[2020Mar16 19:15:24,367][INFO ][1584402323727_584125230166][onMessage ManejadorBalanceMDBean.java:128][Mensaje recibido con exito en la cola de SOLICITUD ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1584402323727_584125230166} | context: {MSISDN={Number=584125230166}, Channel=IVR-VAL, System=IVR, Login=saldo1}}]
+[2020Mar16 19:15:24,374][DEBUG][1584402323727][execute SolicitudQueueSubmiter.java:142][Request enviado a la cola de solicitudes]
+[2020Mar16 19:15:24,376][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>String</Login>
+	<Channel></Channel>
+	<System></System>
+	<MSISDN>
+		<Number>${Number}</Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2020Mar16 19:15:24,378][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_PLBLS_IN>
+	<Login>String</Login>
+	<Channel></Channel>
+	<System></System>
+	<MSISDN>
+		<Number>]
+[2020Mar16 19:15:24,379][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Number]
+[2020Mar16 19:15:24,380][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Number>
+	</MSISDN>
+</RTBS_PLBLS_IN>]
+[2020Mar16 19:15:24,384][DEBUG][1584402323727_584125230166][processRequest RC.java:198][Inicio de consulta a RTBS ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1584402323727_584125230166} | context: {MSISDN={Number=584125230166}, Channel=IVR-VAL, System=IVR, Login=saldo1}}]
+[2020Mar16 19:15:24,392][DEBUG][1584402323727][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Mar16 19:15:24,395][DEBUG][1584402323727][processRequest FCController.java:141][Response: var code='0';
+var message='Proceso completado con exito';]
+[2020Mar16 19:15:24,396][INFO ][1584402323727][doPost SolicitudServlet.java:70][Response Recibido: var code='0';
+var message='Proceso completado con exito';]
+[2020Mar16 19:15:24,398][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${username}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>${suscriberID}</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>17</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2020Mar16 19:15:24,400][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2020Mar16 19:15:24,402][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2020Mar16 19:15:24,403][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2020Mar16 19:15:24,404][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2020Mar16 19:15:24,406][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>]
+[2020Mar16 19:15:24,407][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2020Mar16 19:15:24,408][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>]
+[2020Mar16 19:15:24,410][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2020Mar16 19:15:24,411][DEBUG][1584402323727_584125230166][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>17</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2020Mar16 19:15:24,470][ERROR][1584402323727_584125230166][onMessage ManejadorBalanceMDBean.java:154][Codigo de Error: 2999 Mensaje de Error: Ha ocurrido un error de tipo Exception]
+java.lang.NoSuchMethodError: org.apache.commons.httpclient.HttpClient.getParams()Lorg/apache/commons/httpclient/params/HttpClientParams;
+	at ve.com.digitel.manejador.delegator.RTBSPLBLSDelegator.execute(RTBSPLBLSDelegator.java:126)
+	at ve.com.digitel.manejador.rc.RCHelper.processRTBS(RCHelper.java:79)
+	at ve.com.digitel.manejador.rc.RC.processRTBSQuery(RC.java:135)
+	at ve.com.digitel.manejador.rc.RC.processRequest(RC.java:201)
+	at ve.com.digitel.manejador.mdb.ManejadorBalanceMDBean.onMessage(ManejadorBalanceMDBean.java:130)
+	at weblogic.ejb20.internal.MDListener.execute(MDListener.java:400)
+	at weblogic.ejb20.internal.MDListener.transactionalOnMessage(MDListener.java:333)
+	at weblogic.ejb20.internal.MDListener.onMessage(MDListener.java:298)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:2686)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:2598)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)

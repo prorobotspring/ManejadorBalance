@@ -1,0 +1,140 @@
+[2020Aug09 10:28:22,063][INFO ][1596985102063][doPost SolicitudServlet.java:64][XML Recibido: ]
+[2020Aug09 10:28:22,069][DEBUG][1596985102063][processRequest FCController.java:80][]
+[2020Aug09 10:28:22,070][DEBUG][1596985102063][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2020Aug09 10:28:22,280][ERROR][1596985102063][processRequest FCController.java:100][Codigo de Error: 2010 Mensaje de Error: ]
+org.jdom.input.JDOMParseException: Error on line -1: Premature end of file.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:504)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.manejador.fc.XmlToRequestIVR.run(XmlToRequestIVR.java:59)
+	at ve.com.digitel.manejador.fc.FCHelper.buildRequest(FCHelper.java:56)
+	at ve.com.digitel.manejador.fc.FCController.processRequest(FCController.java:87)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doPost(SolicitudServlet.java:68)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doGet(SolicitudServlet.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	... 18 more
+Caused by: 
+org.xml.sax.SAXParseException: Premature end of file.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.manejador.fc.XmlToRequestIVR.run(XmlToRequestIVR.java:59)
+	at ve.com.digitel.manejador.fc.FCHelper.buildRequest(FCHelper.java:56)
+	at ve.com.digitel.manejador.fc.FCController.processRequest(FCController.java:87)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doPost(SolicitudServlet.java:68)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doGet(SolicitudServlet.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2020Aug09 10:28:22,285][DEBUG][1596985102063][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Aug09 10:28:22,287][INFO ][1596985102063][doPost SolicitudServlet.java:70][Response Recibido: var code='2010';
+var message='';]
+[2020Aug09 10:28:32,306][INFO ][1596985112306][doPost SolicitudServlet.java:64][XML Recibido: 10]
+[2020Aug09 10:28:32,308][DEBUG][1596985112306][processRequest FCController.java:80][10]
+[2020Aug09 10:28:32,309][DEBUG][1596985112306][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2020Aug09 10:28:32,322][ERROR][1596985112306][processRequest FCController.java:100][Codigo de Error: 2010 Mensaje de Error: ]
+org.jdom.input.JDOMParseException: Error on line 1: Content is not allowed in prolog.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:504)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.manejador.fc.XmlToRequestIVR.run(XmlToRequestIVR.java:59)
+	at ve.com.digitel.manejador.fc.FCHelper.buildRequest(FCHelper.java:56)
+	at ve.com.digitel.manejador.fc.FCController.processRequest(FCController.java:87)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doPost(SolicitudServlet.java:68)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doGet(SolicitudServlet.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	... 18 more
+Caused by: 
+org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at weblogic.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1189)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:135)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:152)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.manejador.fc.XmlToRequestIVR.run(XmlToRequestIVR.java:59)
+	at ve.com.digitel.manejador.fc.FCHelper.buildRequest(FCHelper.java:56)
+	at ve.com.digitel.manejador.fc.FCController.processRequest(FCController.java:87)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doPost(SolicitudServlet.java:68)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doGet(SolicitudServlet.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2020Aug09 10:28:32,327][DEBUG][1596985112306][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Aug09 10:28:32,328][INFO ][1596985112306][doPost SolicitudServlet.java:70][Response Recibido: var code='2010';
+var message='';]
+[2020Aug09 10:28:36,456][INFO ][1596985116456][doPost SolicitudServlet.java:64][XML Recibido: null]
+[2020Aug09 10:28:36,458][DEBUG][1596985116456][processRequest FCController.java:80][]
+[2020Aug09 10:28:36,459][DEBUG][1596985116456][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2020Aug09 10:28:36,462][ERROR][1596985116456][processRequest FCController.java:107][Codigo de Error: 2999 Mensaje de Error: Ha ocurrido un error de tipo Exception]
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:33)
+	at ve.com.digitel.manejador.fc.XmlToRequestIVR.run(XmlToRequestIVR.java:59)
+	at ve.com.digitel.manejador.fc.FCHelper.buildRequest(FCHelper.java:56)
+	at ve.com.digitel.manejador.fc.FCController.processRequest(FCController.java:87)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doPost(SolicitudServlet.java:68)
+	at ve.com.digitel.manejador.servlet.SolicitudServlet.doGet(SolicitudServlet.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2020Aug09 10:28:36,464][DEBUG][1596985116456][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Aug09 10:28:36,466][INFO ][1596985116456][doPost SolicitudServlet.java:70][Response Recibido: var code='2998';
+var message='';]

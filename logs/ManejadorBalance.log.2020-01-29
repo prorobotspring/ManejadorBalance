@@ -1,0 +1,78 @@
+[2020Jan29 09:41:46,201][INFO ][1580307106201][doPost SolicitudServlet.java:64][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><RTBS_PLBLS_IN><Login>IVR</Login><Channel>IVR</Channel><System>00415829706720004122882687</System><MSISDN><Number>584122882687</Number></MSISDN></RTBS_PLBLS_IN>]
+[2020Jan29 09:41:46,204][DEBUG][1580307106201][processRequest FCController.java:80][<?xml version="1.0" encoding="UTF-8"?><RTBS_PLBLS_IN><Login>IVR</Login><Channel>IVR</Channel><System>00415829706720004122882687</System><MSISDN><Number>584122882687</Number></MSISDN></RTBS_PLBLS_IN>]
+[2020Jan29 09:41:46,205][DEBUG][1580307106201][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2020Jan29 09:41:46,221][DEBUG][1580307106201][execute SolicitudQueueSubmiter.java:136][Nuevo request: ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580307106201_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00415829706720004122882687, Login=IVR}}]
+[2020Jan29 09:41:46,223][INFO ][1580307106201_584122882687][onMessage ManejadorBalanceMDBean.java:128][Mensaje recibido con exito en la cola de SOLICITUD ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580307106201_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00415829706720004122882687, Login=IVR}}]
+[2020Jan29 09:41:46,224][DEBUG][1580307106201_584122882687][processRequest RC.java:198][Inicio de consulta a RTBS ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580307106201_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00415829706720004122882687, Login=IVR}}]
+[2020Jan29 09:41:46,224][DEBUG][1580307106201][execute SolicitudQueueSubmiter.java:142][Request enviado a la cola de solicitudes]
+[2020Jan29 09:41:46,226][ERROR][1580307106201_584122882687][onMessage ManejadorBalanceMDBean.java:154][Codigo de Error: 2999 Mensaje de Error: Ha ocurrido un error de tipo Exception]
+java.lang.NoSuchMethodError: org.apache.commons.httpclient.HttpClient.getParams()Lorg/apache/commons/httpclient/params/HttpClientParams;
+	at ve.com.digitel.manejador.delegator.RTBSPLBLSDelegator.execute(RTBSPLBLSDelegator.java:126)
+	at ve.com.digitel.manejador.rc.RCHelper.processRTBS(RCHelper.java:79)
+	at ve.com.digitel.manejador.rc.RC.processRTBSQuery(RC.java:135)
+	at ve.com.digitel.manejador.rc.RC.processRequest(RC.java:201)
+	at ve.com.digitel.manejador.mdb.ManejadorBalanceMDBean.onMessage(ManejadorBalanceMDBean.java:130)
+	at weblogic.ejb20.internal.MDListener.execute(MDListener.java:400)
+	at weblogic.ejb20.internal.MDListener.transactionalOnMessage(MDListener.java:333)
+	at weblogic.ejb20.internal.MDListener.onMessage(MDListener.java:298)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:2686)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:2598)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2020Jan29 09:41:46,228][DEBUG][1580307106201][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Jan29 09:41:46,230][DEBUG][1580307106201][processRequest FCController.java:141][Response: var code='0';
+var message='Proceso completado con exito';]
+[2020Jan29 09:41:46,231][INFO ][1580307106201][doPost SolicitudServlet.java:70][Response Recibido: var code='0';
+var message='Proceso completado con exito';]
+[2020Jan29 10:18:37,407][INFO ][1580309317407][doPost SolicitudServlet.java:64][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><RTBS_PLBLS_IN><Login>IVR</Login><Channel>IVR</Channel><System>00615829728830004122882687</System><MSISDN><Number>584122882687</Number></MSISDN></RTBS_PLBLS_IN>]
+[2020Jan29 10:18:37,409][DEBUG][1580309317407][processRequest FCController.java:80][<?xml version="1.0" encoding="UTF-8"?><RTBS_PLBLS_IN><Login>IVR</Login><Channel>IVR</Channel><System>00615829728830004122882687</System><MSISDN><Number>584122882687</Number></MSISDN></RTBS_PLBLS_IN>]
+[2020Jan29 10:18:37,410][DEBUG][1580309317407][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2020Jan29 10:18:37,426][DEBUG][1580309317407][execute SolicitudQueueSubmiter.java:136][Nuevo request: ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580309317407_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00615829728830004122882687, Login=IVR}}]
+[2020Jan29 10:18:37,429][INFO ][1580309317407_584122882687][onMessage ManejadorBalanceMDBean.java:128][Mensaje recibido con exito en la cola de SOLICITUD ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580309317407_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00615829728830004122882687, Login=IVR}}]
+[2020Jan29 10:18:37,430][DEBUG][1580309317407_584122882687][processRequest RC.java:198][Inicio de consulta a RTBS ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580309317407_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00615829728830004122882687, Login=IVR}}]
+[2020Jan29 10:18:37,431][ERROR][1580309317407_584122882687][onMessage ManejadorBalanceMDBean.java:154][Codigo de Error: 2999 Mensaje de Error: Ha ocurrido un error de tipo Exception]
+java.lang.NoSuchMethodError: org.apache.commons.httpclient.HttpClient.getParams()Lorg/apache/commons/httpclient/params/HttpClientParams;
+	at ve.com.digitel.manejador.delegator.RTBSPLBLSDelegator.execute(RTBSPLBLSDelegator.java:126)
+	at ve.com.digitel.manejador.rc.RCHelper.processRTBS(RCHelper.java:79)
+	at ve.com.digitel.manejador.rc.RC.processRTBSQuery(RC.java:135)
+	at ve.com.digitel.manejador.rc.RC.processRequest(RC.java:201)
+	at ve.com.digitel.manejador.mdb.ManejadorBalanceMDBean.onMessage(ManejadorBalanceMDBean.java:130)
+	at weblogic.ejb20.internal.MDListener.execute(MDListener.java:400)
+	at weblogic.ejb20.internal.MDListener.transactionalOnMessage(MDListener.java:333)
+	at weblogic.ejb20.internal.MDListener.onMessage(MDListener.java:298)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:2686)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:2598)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2020Jan29 10:18:37,434][DEBUG][1580309317407][execute SolicitudQueueSubmiter.java:142][Request enviado a la cola de solicitudes]
+[2020Jan29 10:18:37,436][DEBUG][1580309317407][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Jan29 10:18:37,438][DEBUG][1580309317407][processRequest FCController.java:141][Response: var code='0';
+var message='Proceso completado con exito';]
+[2020Jan29 10:18:37,439][INFO ][1580309317407][doPost SolicitudServlet.java:70][Response Recibido: var code='0';
+var message='Proceso completado con exito';]
+[2020Jan29 10:24:34,182][INFO ][1580309674182][doPost SolicitudServlet.java:64][XML Recibido: <?xml version="1.0" encoding="UTF-8"?><RTBS_PLBLS_IN><Login>IVR</Login><Channel>IVR</Channel><System>00415829732400004122882687</System><MSISDN><Number>584122882687</Number></MSISDN></RTBS_PLBLS_IN>]
+[2020Jan29 10:24:34,183][DEBUG][1580309674182][processRequest FCController.java:80][<?xml version="1.0" encoding="UTF-8"?><RTBS_PLBLS_IN><Login>IVR</Login><Channel>IVR</Channel><System>00415829732400004122882687</System><MSISDN><Number>584122882687</Number></MSISDN></RTBS_PLBLS_IN>]
+[2020Jan29 10:24:34,185][DEBUG][1580309674182][buildRequest FCHelper.java:52][INICIO de parser XML de entrada]
+[2020Jan29 10:24:34,200][DEBUG][1580309674182][execute SolicitudQueueSubmiter.java:136][Nuevo request: ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580309674182_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00415829732400004122882687, Login=IVR}}]
+[2020Jan29 10:24:34,202][INFO ][1580309674182_584122882687][onMessage ManejadorBalanceMDBean.java:128][Mensaje recibido con exito en la cola de SOLICITUD ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580309674182_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00415829732400004122882687, Login=IVR}}]
+[2020Jan29 10:24:34,204][DEBUG][1580309674182_584122882687][processRequest RC.java:198][Inicio de consulta a RTBS ve.com.digitel.manejador.model.RequestIVR{ | header: {traceid=1580309674182_584122882687} | context: {MSISDN={Number=584122882687}, Channel=IVR, System=00415829732400004122882687, Login=IVR}}]
+[2020Jan29 10:24:34,204][DEBUG][1580309674182][execute SolicitudQueueSubmiter.java:142][Request enviado a la cola de solicitudes]
+[2020Jan29 10:24:34,205][ERROR][1580309674182_584122882687][onMessage ManejadorBalanceMDBean.java:154][Codigo de Error: 2999 Mensaje de Error: Ha ocurrido un error de tipo Exception]
+java.lang.NoSuchMethodError: org.apache.commons.httpclient.HttpClient.getParams()Lorg/apache/commons/httpclient/params/HttpClientParams;
+	at ve.com.digitel.manejador.delegator.RTBSPLBLSDelegator.execute(RTBSPLBLSDelegator.java:126)
+	at ve.com.digitel.manejador.rc.RCHelper.processRTBS(RCHelper.java:79)
+	at ve.com.digitel.manejador.rc.RC.processRTBSQuery(RC.java:135)
+	at ve.com.digitel.manejador.rc.RC.processRequest(RC.java:201)
+	at ve.com.digitel.manejador.mdb.ManejadorBalanceMDBean.onMessage(ManejadorBalanceMDBean.java:130)
+	at weblogic.ejb20.internal.MDListener.execute(MDListener.java:400)
+	at weblogic.ejb20.internal.MDListener.transactionalOnMessage(MDListener.java:333)
+	at weblogic.ejb20.internal.MDListener.onMessage(MDListener.java:298)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:2686)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:2598)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2020Jan29 10:24:34,207][DEBUG][1580309674182][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Jan29 10:24:34,209][DEBUG][1580309674182][processRequest FCController.java:141][Response: var code='0';
+var message='Proceso completado con exito';]
+[2020Jan29 10:24:34,210][INFO ][1580309674182][doPost SolicitudServlet.java:70][Response Recibido: var code='0';
+var message='Proceso completado con exito';]
